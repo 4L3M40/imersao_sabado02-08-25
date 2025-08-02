@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ponto Turistico - Velozes 5 no Rio</title>
+    <link rel="stylesheet" href="{% static 'estilo.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Ponto Turistico : Rio de Janeiro</h1>
+        <nav>
+            <a href="{% url 'pagina1' %}">1</a>
+            <a href="{% url 'pagina2' %}">2</a>
+            <a href="{% url 'pagina3' %}">3</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Favela Santa Teresa (filmagem)</h2>
+        <p>Embora fictícia no filme, a favela foi inspirada em comunidades reais do Rio. As cenas de perseguição foram gravadas usando efeitos e sets criados com CGI misturado a cenas reais.</p>
+
+        <h2>Praia de Copacabana</h2>
+        <p>Uma das praias mais famosas do mundo, usada em tomadas rápidas do filme para mostrar a vida carioca.</p>
+
+        <h2>Centro do Rio</h2>
+        <p>O roubo ao cofre gigante, uma das cenas mais famosas, teve parte da ambientação inspirada no centro histórico do Rio.</p>
+    </section>
+    <footer>
+        Desenvolvido por Evandro - Atividade SENAI 💻
+    </footer>
+</body>
+</html>

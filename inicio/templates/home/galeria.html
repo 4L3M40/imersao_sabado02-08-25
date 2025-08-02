@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria - Velozes e Furiosos</title>
+    <link rel="stylesheet" href="{% static 'estilo.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Galeria de Fotos</h1>
+            <nav>
+                <a href="{% url 'pagina1' %}">1</a>
+                <a href="{% url 'pagina2' %}">2</a>
+                <a href="{% url 'pagina3' %}">3</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="galeria">
+                <figure>
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.wgffX0mlNDi4uFPu7r8-8AHaHE?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cena clássica">
+                    <figcaption>Dom e Brian lado a lado — parceria que marcou toda a franquia.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://th.bing.com/th/id/R.8de475d56bbc45ab54da2564dd5d47d6?rik=Kmvs4zro6bQsEQ&pid=ImgRaw&r=0" alt="Carros velozes">
+                    <figcaption>Os carros tunados são parte essencial da emoção e estilo da série.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://www.cafecomfilme.com.br/images/capa/0816/velozesfuriosos5600.jpg" alt="Elenco reunido">
+                    <figcaption>O elenco reunido para mais uma missão — família acima de tudo.</figcaption>
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            Desenvolvido por Evandro - Atividade SENAI 💻
+        </footer>
+    </div>
+</body>
+</html>

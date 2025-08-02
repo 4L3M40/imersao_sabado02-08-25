@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velozes e Furiosos</title>
+    <link rel="stylesheet" href='static/estilo.css'>
+</head>
+<body>
+
+    <header>
+        <h1>Velozes e Furiosos</h1>
+        <h2>A franquia que acelerou o coração dos fãs</h2>
+        <nav>
+            <a href="{% url 'pagina1' %}">1</a>
+            <a href="{% url 'pagina2' %}">2</a>
+            <a href="{% url 'pagina3' %}">3</a>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Div para imagem do topo -->
+        <div class="imagem-topo">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXhhZXFobDVudTdnNW91ZzA0bGFqbmhqYncwMHBnamZwbHFycmRkbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XTjnKcrZlOlaC6sY2d/giphy.gif" alt="Poster do filme Velozes e Furiosos" style="max-height: 400px;">
+        </div>
+
+        <!-- Div para o conteúdo do parágrafo e lista -->
+        <div class="conteudo">
+            <p>
+                Velozes e Furiosos é uma franquia de filmes de ação centrada em corridas de rua, carros tunados, amizade e família. Desde o primeiro filme em 2001, a série evoluiu de simples rachas para assaltos e espionagens internacionais.
+            </p>
+
+            <h3>Personagens principais:</h3>
+            <ul>
+                <li>Dominic Toretto (Vin Diesel)</li>
+                <li>Brian O'Conner (Paul Walker)</li>
+                <li>Letty Ortiz (Michelle Rodriguez)</li>
+                <li>Roman Pearce (Tyrese Gibson)</li>
+                <li>Tej Parker (Ludacris)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Div para imagem final -->
+    <div class="imagem-final">
+        <img src="https://th.bing.com/th/id/OIP.lARKTsD7hjW7qIxg3YrKGwHaEz?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Carros Velozes e Furiosos" style="max-height: 400px;">
+    </div>
+
+    <footer>
+        Desenvolvido por Evandro - Atividade SENAI 💻
+    </footer>
+
+</body>
+</html>
